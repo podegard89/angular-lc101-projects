@@ -1,0 +1,22 @@
+<table style="width:100%">
+    <tr>
+        <th class="th-style">Skill Name</th>
+        <th class="th-style">Sub Skill 1</th>
+        <th class="th-style">Sub Skill 2</th>
+    </tr>
+    <tr *ngFor="let skill of skills">
+        <td>{{skill.name}}</td>
+        <td [class.anonymous-style]="skill.subSkill1 === 'Anonymous'">{{skill.subSkill1}}</td>
+        <td>{{skill.subSkill2}}</td>
+    </tr>
+    <!-- <tr>
+        <td>{{skills[1].name}}</td>
+        <td>{{skills[1].subSkill1}}</td>
+        <td>{{skills[1].subSkill2}}</td>
+    </tr>
+    <tr>
+        <td>{{skills[2].name}}</td>
+        <td>{{skills[2].subSkill1}}</td>
+        <td>{{skills[2].subSkill2}}</td>
+    </tr> -->
+</table>
